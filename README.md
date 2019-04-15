@@ -1,6 +1,7 @@
 # travel
 
-> A Vue.js project
+>一个Vue.js项目
+一个仿携程旅行，去哪儿旅行，飞猪旅行的移动的页面
 
 ## Build Setup
 
