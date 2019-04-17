@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img class="item-img" :src="item.imgUrl">
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -17,25 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return{
-      recommendList: [{
-        id: '0001',
-        imgUrl: '//gw.alicdn.com/bao/uploaded/i2/2680662586/TB2w6RUd25TBuNjSspcXXbnGFXa_!!2680662586.jpg_220x10000Q75.jpg_.webp',
-        title: '三亚旅游5天4晚',
-        desc: '亲子线路纯玩临海套房泳池别墅可升级mini商务小团'
-      },{
-        id: '0002',
-        imgUrl: '//gw.alicdn.com/bao/uploaded/i2/2200608580872/O1CN01CPJYVf1IJPs1nt76C_!!2200608580872.jpg_220x10000Q75.jpg_.webp',
-        title: '广东清远温泉度假村',
-        desc: '广东清远英德宝墩湖湖山温泉度假村宝墩湖亲水别墅温泉酒店含早餐'
-      },{
-        id: '0003',
-        imgUrl: '//gw.alicdn.com/bao/uploaded/i4/2157654808/O1CN01RnyKfA1lO6lvrzVcH_!!2157654808.jpg_220x10000Q75.jpg_.webp',
-        title: '七星亚特兰蒂斯',
-        desc: '全国三亚旅游5天4晚亲子自由行海景房自驾BBQ'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
