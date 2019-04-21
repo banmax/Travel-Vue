@@ -21,7 +21,7 @@ import {mapState} from 'vuex'
 export default {
   name: 'HomeHerder',
   computed: {
-    ...mapState(['city'])
+    ...mapState(['city']) 
   }
 }
 </script>
