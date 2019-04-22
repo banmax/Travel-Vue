@@ -38,7 +38,7 @@ export default {
     overflow hidden
     width 100%
     height 0
-    padding-bottom 31.15%
+    padding-bottom 26.667%
     background #ccc
     .swiper-img
       width 100%

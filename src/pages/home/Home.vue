@@ -18,7 +18,7 @@ import axios from 'axios'
 import {mapState} from 'vuex'
 export default {
   name: 'Home',
-  components:{
+  components: {
     HomeHeader,
     HomeSwiper,
     HomeIcons,
