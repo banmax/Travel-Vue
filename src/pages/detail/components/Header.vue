@@ -25,7 +25,8 @@ export default {
   },
   methods: {
     handleScroll () {
-      const top = document.documentElement.scrollTop
+      const top = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      console.log(top);
       if (top > 0) {
         let opacity = top / 160
         opacity = opacity > 1 ? 1 : opacity
@@ -36,10 +37,10 @@ export default {
       }
     }
   },
-  activated () {
+  mounted () {
     window.addEventListener('scroll',this.handleScroll)
   },
-  deactivated () {
+  beforeDestroy () {
     window.removeEventListener('scroll',this.handleScroll)
   }
 }
@@ -67,7 +68,6 @@ export default {
     left 0
     right 0
     height $headerHeight
-    // overflow hidden
     line-height $headerHeight
     text-align center
     color #ffffff
