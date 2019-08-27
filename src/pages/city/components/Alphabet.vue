@@ -66,7 +66,6 @@ export default {
     position absolute
     top 1.58rem
     right 0
-    bottom 0
     width .4rem
     .item
       line-height .4rem
