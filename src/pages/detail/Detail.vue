@@ -2,6 +2,7 @@
   <div>
     <detail-banner :sightName="sightName" :bannerImg="bannerImg" :bannerImgs="gallaryImgs"></detail-banner>
     <detail-header></detail-header>
+    <detail-introduction></detail-introduction>
     <div class="content">
     <detail-list :list="list"></detail-list>
     </div>
@@ -12,13 +13,15 @@
 import DetailBanner from './components/Banner'
 import DetailHeader from './components/Header'
 import DetailList from './components/List'
+import DetailIntroduction from './components/Introduction'
 import axios from 'axios'
 export default {
   name: 'Detail',
   components: {
     DetailBanner,
     DetailHeader,
-    DetailList
+    DetailList,
+    DetailIntroduction
   },
   data () {
     return {
@@ -55,5 +58,5 @@ export default {
 
 <style lang="stylus" scoped>
   .content
-    height 50rem
+    height 30rem
 </style>
