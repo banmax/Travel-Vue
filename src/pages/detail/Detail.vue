@@ -3,6 +3,7 @@
     <detail-banner :sightName="sightName" :bannerImg="bannerImg" :bannerImgs="gallaryImgs"></detail-banner>
     <detail-header></detail-header>
     <detail-introduction></detail-introduction>
+    <detail-recommented></detail-recommented>
     <div class="content">
     <detail-list :list="list"></detail-list>
     </div>
@@ -12,16 +13,18 @@
 <script>
 import DetailBanner from './components/Banner'
 import DetailHeader from './components/Header'
-import DetailList from './components/List'
 import DetailIntroduction from './components/Introduction'
+import DetailRecommented from './components/Recommend'
+import DetailList from './components/List'
 import axios from 'axios'
 export default {
   name: 'Detail',
   components: {
     DetailBanner,
     DetailHeader,
-    DetailList,
-    DetailIntroduction
+    DetailRecommented,
+    DetailIntroduction,
+    DetailList
   },
   data () {
     return {
